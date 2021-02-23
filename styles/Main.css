@@ -35,7 +35,7 @@ nav{
     font-weight: normal;
     font-size: 35px;
     text-align: center;
-    padding: 50px;
+    line-height:1.5;
 }
 
 .my-project-button,.about-me-button,.homepage-button,.tech-exp-button{
