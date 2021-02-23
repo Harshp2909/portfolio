@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+nav{
+    background-color: #ff7d19;
+    text-align: center;
+    height: 75px;
+    padding-top: 8px;
+    width: 100%
+}
+    
+.logo-image{
+    position:absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.my-project-button,.about-me-button,.homepage-button,.tech-exp-button{
+    display: inline-block;
+    border: 2px solid #FD7F20;
+    padding: 10.5px 17px;
+    font-size: 19px;
+    cursor: pointer;
+    background-color: white;
+    color: #FD7F20;
+    font-family: 'Fredoka One', cursive;
+    margin: 6px;
+}
+
+    
+    
+    
+    
