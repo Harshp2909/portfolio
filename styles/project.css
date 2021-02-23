@@ -30,10 +30,12 @@ nav{
     margin: 6px;
 }
 
-footer{
+
+footernav{
     background-color: #ff7d19;
     text-align: center;
     height: 75px;
     padding-top: 8px;
     width: 100%
+
 }
