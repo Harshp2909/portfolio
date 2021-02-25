@@ -32,7 +32,14 @@ nav{
 .website-title{
     font-family: 'Ultra', serif;
     font-size: 55px;
+    color: #FD7F20;
     position: absolute;
     top:14px;
     left: 325px;
+}
+.webpage-title{font-family:'Oxygen', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: none;
 }
