@@ -3,14 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.site-title{
-    font-family: 'Ulra', serif;
-    font-weight: bold;
-    position: absolute;
-    left: 430px;
-    top: 10px;
-    font-size: 60px;
-}
+
 nav{
     background-color: #ff7d19;
     text-align: center;
@@ -36,6 +29,10 @@ nav{
     color: #FD7F20;
     font-family: 'Fredoka One', cursive;
     margin: 6px;
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> parent of e76e36b (Added main title to header)
