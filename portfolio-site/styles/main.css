@@ -29,3 +29,10 @@ nav{
     font-family: 'Fredoka One', cursive;
     margin: 6px;
 }
+.website-title{
+    font-family: 'Ultra', serif;
+    font-size: 55px;
+    position: absolute;
+    top:14px;
+    left: 325px;
+}
