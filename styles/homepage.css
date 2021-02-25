@@ -1,10 +1,10 @@
-#greeting{ 
+#introhead{ 
     font-family:'Oxygen', sans-serif;
     font-size: 50px;
     font-weight: 900;
     text-align: center;}
 
-#overview-of-assignment{ 
+#introtext{ 
     position: absolute;
     left: 0%;
     right: 0%;
