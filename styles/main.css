@@ -17,7 +17,7 @@ nav{
     margin-left: 10px;
 }
 
-#my-project-button,#about-me-button,#homepage-button,#tech-exp-button{
+.my-project-button,.about-me-button,.homepage-button,.tech-exp-button{
     display: inline-block;
     border: 2px solid #FD7F20;
     padding: 10.5px 17px;
