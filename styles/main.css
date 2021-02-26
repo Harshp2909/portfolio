@@ -42,3 +42,7 @@ nav{
     text-align: center;
     text-transform: none;
 }
+button :hover{
+    color: white;
+    background-color: #FD7F20;
+}  
