@@ -1,4 +1,8 @@
+#row{
+    display: inline-block;
+}
 #about-me-text-1{
+    display: inline-block;
     font-family: 'EB Garamond', serif;
     font-weight: normal;
     font-size: 25px;
@@ -6,6 +10,7 @@
     line-height:40px;
 }
 #about-me-text-2{
+    display: inline-block;
     font-family: 'EB Garamond', serif;
     font-style: normal;
     font-weight: normal;
