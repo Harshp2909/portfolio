@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin: 0.5px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ nav{
     text-align: center;
     height: 75px;
     padding-top: 8px;
-    width: 100%;
+    width: 100% !important;
 }
 .logo-image{
     position:absolute;
