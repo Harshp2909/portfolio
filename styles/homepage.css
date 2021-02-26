@@ -18,7 +18,13 @@
     text-align: center;
     line-height:40px;
 }
+#google-homescreen{
+    image-rendering: optimizeQuality;
+    margin-left: 40px;
+    
+    
 
+}
 
 
 
