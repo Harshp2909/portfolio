@@ -14,22 +14,22 @@
     line-height:40px;
     padding-bottom: 15px;
     position: absolute;
-    border: solid 5px;
+    border: solid 3px;
     border-color: #ff7d19;
 }
 #about-me-text-2{
-    display: inline-block;
-    font-family: 'EB Garamond', serif;
-    font-weight: normal;
+    display:inline-block;
+    font-family:'EB Garamond',serif;
+    font-weight:normal;
     font-size: 20px;
     text-align: left;
     line-height:40px;
-    border: solid 5px;
-    border-color: #ff7d19;
-    position: absolute;
+    border:solid 3px;
+    border-color:#ff7d19;
+    position:absolute;
 }
 #cadets-logo{
-    position: absolute;
+    position:absolute;
     left: 58%;
 }
 #robotics-comp{

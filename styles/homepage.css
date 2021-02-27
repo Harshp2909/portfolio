@@ -22,3 +22,11 @@
     margin-top: 400px;
     margin-left: 375px;
 }
+figcaption{
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+}
