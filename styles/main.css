@@ -47,4 +47,21 @@ button :hover{
     background-color: #FD7F20;
 }  
 
-
+.bottom-navbar{
+    background-color: #ff7d19;
+    text-align: center;
+    height: 55px;
+    padding-top: 8px;
+    width: 100% !important;
+}
+.bottom-my-project-button,.bottom-about-me-button,.bottom-homepage-button,.bottom-tech-exp-button{
+    display: inline-block;
+    border: 0.5px solid #FD7F20;
+    padding: 4.5px 11px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: #FD7F20;
+    font-family: 'Fredoka One', cursive;
+    margin: 3px;
+}
