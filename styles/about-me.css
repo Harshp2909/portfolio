@@ -34,4 +34,14 @@
 }
 #robotics-comp{
     position: absolute;
-    left: 72%;}
+    left: 72%;
+}
+#good-doc-logo{
+    position: absolute;
+    left: 55%;
+}
+#stock-board{
+    position: relative;
+    left: 740px;
+    float:right;
+}
