@@ -45,3 +45,7 @@
     left: 740px;
     float:right;
 }
+footer{
+    position:absolute;
+    top: 1150px !important;
+}

@@ -28,5 +28,10 @@ figcaption{
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    position: relative;
+    position: absolute;
+    right: 65%;
+}
+footer{
+    position: absolute;
+    top: 1150px;
 }
