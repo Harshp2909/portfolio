@@ -3,9 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 .top-navbar{
-    background-color: #ff7d19;
+    background-color: #FD7F20;
     text-align: center;
     height: 75px;
     padding-top: 8px;
@@ -16,7 +15,6 @@
     margin-top: 5px;
     margin-left: 10px;
 }
-
 .my-project-button,.about-me-button,.homepage-button,.tech-exp-button{
     display: inline-block;
     border: 2px solid #FD7F20;
@@ -38,7 +36,7 @@
 }
 .webpage-title{font-family:'Oxygen', sans-serif;
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 900px;
     text-align: center;
     text-transform: none;
 }
@@ -46,9 +44,8 @@ button :hover{
     color: white;
     background-color: #FD7F20;
 }  
-
 .bottom-navbar{
-    background-color: #ff7d19;
+    background-color: #FD7F20;
     text-align: center;
     height: 55px;
     padding-top: 8px;
@@ -75,5 +72,5 @@ footer{
     font-size: small;
     padding-top: 10px;
     position: absolute;
-    bottom: -40%;
+    top: 40%;
 }

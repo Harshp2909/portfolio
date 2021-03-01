@@ -32,7 +32,11 @@
     position:absolute;
     left: 58%;
 }
-#robotics-comp{
+#attribution-cadets-logo{
+    position:absolute;
+    right: 60%;
+}
+#curry-2016{
     position: absolute;
     left: 72%;
 }
@@ -42,10 +46,10 @@
 }
 #stock-board{
     position: relative;
-    left: 740px;
-    float:right;
+    left: 810px;
+    top: 160px;
 }
 footer{
     position:absolute;
-    top: 1150px !important;
+    top: 1155px !important;
 }
