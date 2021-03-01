@@ -34,22 +34,61 @@
 }
 #attribution-cadets-logo{
     position:relative;
-    bottom: 45%;
+    top: 350px;
+    left: 840px;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
 }
 #curry-2016{
     position: absolute;
     left: 72%;
+    top: 32%;
+}
+#attribution-curry-2016{
+    position:relative;
+    top: 335px;
+    left: 1050px;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+
 }
 #good-doc-logo{
     position: absolute;
     left: 55%;
+}
+#attribution-good-doc-logo{
+    position: absolute;
+    left: 59%;
+    top:850px;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+
 }
 #stock-board{
     position: relative;
     left: 810px;
     top: 160px;
 }
+#attribution-stock-board{
+    position: relative;
+    left: 810px;
+    top: 163px;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
 footer{
     position:absolute;
-    top: 1155px !important;
+    top: 1195px !important;
 }
