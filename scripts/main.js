@@ -1,2 +1,2 @@
-let weeee = "Harsh";
+let weeee = 'Harsh';
 console.log(weeee)
