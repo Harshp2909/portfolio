@@ -19,6 +19,7 @@ p{
     margin: auto;
     width: 50%;
     text-align: center;
+    text-shadow: 10px 10px 10px #FF7d19;
 }
 .bottom-navbar{
     position:absolute;
