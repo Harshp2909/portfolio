@@ -1,0 +1,16 @@
+.tech-exp-text{
+    display: inline-block;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    line-height:40px;
+    padding-bottom: 15px;
+    position: absolute;
+    border: solid 3px;
+    border-color: #ff7d19;
+}
+.footer{
+    position:absolute;
+    bottom: 1000px !important;
+}
