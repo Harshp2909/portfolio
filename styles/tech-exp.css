@@ -10,7 +10,25 @@
     border: solid 3px;
     border-color: #ff7d19;
 }
-.footer{
+.bottom-navbar{
     position:absolute;
-    bottom: 1000px !important;
+    top:480px;
+}
+#text-div{
+    text-align: center;
+    vertical-align: top;
+}
+#frc-comp{
+    position: absolute;
+    right: 870px;
+}
+#attribution-frc-comp{
+    position: absolute;
+    right:1265px;
+    top:735px;
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
 }
