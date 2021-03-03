@@ -1,0 +1,27 @@
+#coming-soon-text{
+    font-family:'Oxygen', sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+p{
+    letter-spacing: 30px;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height:40px;
+    padding-bottom: 15px;
+    border: solid 3px;
+    border-color: #ff7d19;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.bottom-navbar{
+    position:absolute;
+    top:480px;
+}
+    
