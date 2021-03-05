@@ -51,11 +51,11 @@
 #curry-2016{
     position: absolute;
     left: 72%;
-    top: 31%;
+    bottom: 27%;
 }
 #attribution-curry-2016{
     position:relative;
-    top: 335px;
+    top: 315px;
     left: 1050px;
     text-align: left;
     font-family: 'EB Garamond', serif;
@@ -71,7 +71,7 @@
 #attribution-good-doc-logo{
     position: absolute;
     left: 59%;
-    top:850px;
+    top:910px;
     text-align: left;
     font-family: 'EB Garamond', serif;
     font-style: normal;
@@ -93,9 +93,10 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
+
 }
 /* bottom navigation formatting specific to webpage*/
 footer{
     position:absolute;
-    top: 1195px !important;
+    top: 1240px !important;
 }
