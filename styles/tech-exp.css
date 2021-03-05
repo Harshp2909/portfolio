@@ -1,3 +1,4 @@
+/*text for webpage*/
 .tech-exp-text{
     display: inline-block;
     font-family: 'EB Garamond', serif;
@@ -8,16 +9,19 @@
     padding-bottom: 15px;
     position: absolute;
     border: solid 3px;
-    border-color: #ff7d19;
+    border-color: #FD7F20;
 }
+/*navigation bar format specific to webpage*/
 .bottom-navbar{
     position:absolute;
     top:480px;
 }
+/*positoning of text on page*/
 #text-div{
     text-align: center;
     vertical-align: top;
 }
+/*Robotics picture and attribution*/
 #frc-comp{
     position: absolute;
     right: 870px;
