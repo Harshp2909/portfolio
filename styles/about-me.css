@@ -1,10 +1,13 @@
+/*layout for first row of text and pictures*/
 #row1{
     display: inline-block;
 }
+/*layout for second row of text and pictures*/
 #row2{
     align-content: left;
     padding-top: 30%;
 }
+/*text for row 1 formatting*/
 #about-me-text-1{
     display: inline-block;
     font-family: 'EB Garamond', serif;
@@ -17,6 +20,7 @@
     border: solid 3px;
     border-color: #ff7d19;
 }
+/*text for row 2 formatting*/
 #about-me-text-2{
     display:inline-block;
     font-family:'EB Garamond',serif;
@@ -28,6 +32,7 @@
     border-color:#ff7d19;
     position:absolute;
 }
+/*adding logo and attribution for cadets logo*/
 #cadets-logo{
     position:absolute;
     left: 58%;
@@ -42,6 +47,7 @@
     font-weight: normal;
     font-size: 12px;
 }
+/*image and attribution for Stephen Curry image*/
 #curry-2016{
     position: absolute;
     left: 72%;
@@ -56,8 +62,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-
 }
+/*image and attribution formatiing for Good Doctor logo*/
 #good-doc-logo{
     position: absolute;
     left: 55%;
@@ -71,8 +77,8 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-
 }
+/*image and attribution formatiing for stock board logo*/
 #stock-board{
     position: relative;
     left: 810px;
@@ -88,6 +94,7 @@
     font-weight: normal;
     font-size: 12px;
 }
+/* bottom navigation formatting specific to webpage*/
 footer{
     position:absolute;
     top: 1195px !important;

@@ -1,9 +1,10 @@
+/*webpage title*/
 #introhead{ 
     font-family:'Oxygen', sans-serif;
     font-size: 50px;
     font-weight: 900;
     text-align: center;}
-
+/*text explaining site*/
 #introtext{ 
     position: absolute;
     left: 0%;
@@ -18,6 +19,7 @@
     text-align: center;
     line-height:40px;
 }
+/*image and attribution formatiing for Google homescreen*/
 #google-homescreen{
     margin-top: 400px;
     margin-left: 375px;
@@ -31,6 +33,7 @@ figcaption{
     position: absolute;
     right: 65%;
 }
+/* bottom navigation formatting specific to webpage*/
 footer{
     position: absolute;
     top: 1170px;
