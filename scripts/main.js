@@ -1,6 +1,4 @@
-function welcome() {​​
-    let username = prompt("What is your name?");    
-    let message = "Welcome, " + username;
-    document.getElementById('saywelcome').innerHTML = message; 
-}
-​​
+function playmusic()
+    var music= new Audio('fpba-theme.mp3')
+    music.play();
+    
