@@ -26,4 +26,19 @@
     position:absolute;
     top:480px;
 }
-    
+.assignment-buttons-1,.assignment-buttons-2,.assignment-buttons-3,.assignment-buttons-4,.assignment-buttons-5,
+.assignment-buttons-6,.assignment-buttons-7,.assignment-buttons-8,.assignment-buttons-9{
+    display: inline-block;
+    border: 0.5px solid #FD7F20;
+    padding: 4.5px 11px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: #FD7F20;
+    font-family: 'Fredoka One', cursive;
+    margin: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
