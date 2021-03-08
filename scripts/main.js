@@ -2,7 +2,7 @@ function f1(){
     alert("Script 1 is in progress...");
 }
 function f2(){
-    alert("Script 2 is in progress...");
+    window.prompt("Script 2 is in progress...");
 }
 function f3(){
     alert("Script 3 is in progress...");
