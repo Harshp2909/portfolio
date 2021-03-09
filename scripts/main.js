@@ -1,28 +1,28 @@
-function f1(){
+function function1(){
     alert("Script 1 is in progress...");
 }
-function f2(){
+function function2(){
     window.prompt("Script 2 is in progress...");
 }
-function f3(){
+function function3(){
     alert("Script 3 is in progress...");
 }
-function f4(){
+function function4(){
     alert("Script 4 is in progress...");
 }
-function f5(){
+function function5(){
     alert("Script 5 is in progress...");
 }
-function f6(){
+function function6(){
     alert("Script 6 is in progress...");
 }
-function f7(){
+function function7(){
     alert("Script 7 is in progress...");
 }
-function f8(){
+function function8(){
     alert("Script 8 is in progress...");
 }
-function f9(){
+function function9(){
     alert("Script 9 is in progress...");
 }
 

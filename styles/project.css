@@ -26,19 +26,33 @@
     position:absolute;
     top:480px;
 }
-.assignment-buttons-1,.assignment-buttons-2,.assignment-buttons-3,.assignment-buttons-4,.assignment-buttons-5,
-.assignment-buttons-6,.assignment-buttons-7,.assignment-buttons-8,.assignment-buttons-9{
+
+.assignment-buttons{
+    text-align: center;
+    margin: 3em;
+}
+.assignment-buttons-1,.assignment-buttons-2,
+.assignment-buttons-3,.assignment-buttons-4,
+.assignment-buttons-5,.assignment-buttons-6,
+.assignment-buttons-7,.assignment-buttons-8,
+.assignment-buttons-9{
+    margin: 4px;
+    padding:2em;
+    width: auto;
+    height: 10em;
     display: inline-block;
-    border: 0.5px solid #FD7F20;
-    padding: 4.5px 11px;
+    border: 2px solid #FD7F20;
     font-size: 16px;
     cursor: pointer;
     background-color: white;
     color: #FD7F20;
     font-family: 'Fredoka One', cursive;
-    margin: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-radius: 3px,3px,3px,3px;
 }
+.assignment-buttons-1:hover,.assignment-buttons-2:hover,
+.assignment-buttons-3:hover,.assignment-buttons-4:hover,
+.assignment-buttons-5:hover,.assignment-buttons-6:hover,
+.assignment-buttons-7:hover,.assignment-buttons-8:hover,
+.assignment-buttons-9:hover{
+    color: white;
+    background-color: #FD7F20}
