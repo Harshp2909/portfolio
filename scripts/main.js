@@ -1,3 +1,4 @@
+//placeholder buttons' functions
 function function1(){
     alert("Project 1 still in progress");
 }

@@ -1,3 +1,4 @@
+/*text for webpage heading*/
 #coming-soon-text{
     font-family:'Oxygen', sans-serif;
     font-size: 34px;
@@ -7,6 +8,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
 }
+/* text for tagline*/
 #tagline{
     letter-spacing: 30px;
     font-family: 'EB Garamond', serif;
@@ -22,15 +24,17 @@
     font-weight: bolder;
     text-decoration-style:wavy;
 }
+/*bottom navigation bar*/
 .bottom-navbar{
     position:absolute;
     top:480px;
 }
-
+/*placeholder buttons*/
 .assignment-buttons{
     text-align: center;
     margin: 3em;
 }
+/*buttons formatting*/
 .assignment-buttons-1,.assignment-buttons-2,
 .assignment-buttons-3,.assignment-buttons-4,
 .assignment-buttons-5,.assignment-buttons-6,
@@ -48,7 +52,9 @@
     color: #FD7F20;
     font-family: 'Fredoka One', cursive;
     border-radius: 3px,3px,3px,3px;
+    background-color: #FFCA4B;
 }
+/*hover effect for buttons*/
 .assignment-buttons-1:hover,.assignment-buttons-2:hover,
 .assignment-buttons-3:hover,.assignment-buttons-4:hover,
 .assignment-buttons-5:hover,.assignment-buttons-6:hover,
