@@ -27,7 +27,7 @@
 /*bottom navigation bar*/
 .bottom-navbar{
     position:absolute;
-    top:480px;
+    top:650px;
 }
 /*placeholder buttons*/
 .assignment-buttons{
@@ -42,7 +42,7 @@
 .assignment-buttons-9{
     margin: 4px;
     padding:2em;
-    width: auto;
+    width: 400px;
     height: 10em;
     display: inline-block;
     border: 2px solid #FD7F20;
