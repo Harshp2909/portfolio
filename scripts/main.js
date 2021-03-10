@@ -3,7 +3,7 @@ function function1(){
     alert("Project 1 still in progress");
 }
 function function2(){
-    window.prompt("Project 2 is in progress");
+    alert("Project 2 is in progress");
 }
 function function3(){
     alert("Project 3 is in progress");
