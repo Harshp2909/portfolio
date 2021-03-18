@@ -31,7 +31,7 @@ function signOfProduct(){
     }
     document.getElementById("assignment-buttons-2").innerHTML = productSign;
 }
-//Get checked by teacher tomorrow//
+
 function threeNumberSort(){
     let numSort1 = parseInt(prompt("Enter the number"));
     let numSort2 = parseInt(prompt("Enter number here"));
@@ -51,6 +51,7 @@ function threeNumberSort(){
     }
     else if(numSort3 > numSort2 > numSort1){
         numsorted = numSort3 + "," + numSort2 + "," + numSort1;
+        document.getElementById("assignment-button-3").innerHTML = numsorted
     }
    else if(numSort3 > numSort1 > numSort2){
     numsorted = toString(numSort3)+","+toString(numSort1)+","+toString(numSort2)
