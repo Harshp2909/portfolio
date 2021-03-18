@@ -35,11 +35,11 @@
     margin: 3em;
 }
 /*buttons formatting*/
-.assignment-buttons-1,.assignment-buttons-2,
-.assignment-buttons-3,.assignment-buttons-4,
-.assignment-buttons-5,.assignment-buttons-6,
-.assignment-buttons-7,.assignment-buttons-8,
-.assignment-buttons-9{
+#assignment-buttons-1,#assignment-buttons-2,
+#assignment-buttons-3,#assignment-buttons-4,
+#assignment-buttons-5,#assignment-buttons-6,
+#assignment-buttons-7,#assignment-buttons-8,
+#assignment-buttons-9{
     margin: 4px;
     padding:2em;
     width: 425px;
@@ -55,10 +55,10 @@
     background-color: #FFCA4B;
 }
 /*hover effect for buttons*/
-.assignment-buttons-1:hover,.assignment-buttons-2:hover,
-.assignment-buttons-3:hover,.assignment-buttons-4:hover,
-.assignment-buttons-5:hover,.assignment-buttons-6:hover,
-.assignment-buttons-7:hover,.assignment-buttons-8:hover,
-.assignment-buttons-9:hover{
+#assignment-buttons-1:hover,#assignment-buttons-2:hover,
+#assignment-buttons-3:hover,#assignment-buttons-4:hover,
+#assignment-buttons-5:hover,#assignment-buttons-6:hover,
+#assignment-buttons-7:hover,#assignment-buttons-8:hover,
+#assignment-buttons-9:hover{
     color: white;
     background-color: #FD7F20}
