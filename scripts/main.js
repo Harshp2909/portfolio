@@ -12,8 +12,8 @@ function largerNumber() {
     else if (smallOrLarge1 == smallOrLarge2) {
         largernumber = "The numbers are equal";
     }
-    else{
-        largernumber = "Invalid input"
+    else {
+        largernumber = "Invalid input";
     }
     document.getElementById("assignment-buttons-1").innerHTML = largernumber;
 }
@@ -32,8 +32,8 @@ function signOfProduct() {
     else if (productInput1 * productInput2 * productInput3 == 0) {
         productSign = "The sign is neither positive or negative";
     }
-    else{
-        productSign = "Invalid input"
+    else {
+        productSign = "Invalid input";
     }
     document.getElementById("assignment-buttons-2").innerHTML = productSign;
 }
@@ -60,17 +60,17 @@ function threeNumberSort() {
     else if (numSort3 > numSort1 && numSort1 > numSort2) {
         numsorted = numSort3.toString() + "," + numSort1.toString() + "," + numSort2.toString();
     }
-    else{
-        numsorted = "Invalid Input"
+    else {
+        numsorted = "Invalid Input";
     }
     document.getElementById("assignment-buttons-3").innerHTML = numsorted;
 }
 function forSumThrees() {
-    let totalsumThrees = 0; 
-    for(let i = 0; i<1000; i = i + 3){
+    let totalsumThrees = 0;
+    for (let i = 0; i < 1000; i = i + 3) {
         totalsumThrees = totalsumThrees + i;
     }
-    document.getElementById("assignment-buttons-4").innerHTML = totalsumThrees
+    document.getElementById("assignment-buttons-4").innerHTML = totalsumThrees;
 }
 
 function whileSumThrees() {
@@ -80,22 +80,22 @@ function whileSumThrees() {
         totalSum += i;
         i = i + 3;
     }
-    document.getElementById("assignment-buttons-5").innerHTML = totalSum
-    }
+    document.getElementById("assignment-buttons-5").innerHTML = totalSum;
+}
 
 function tenFour() {
-    for(i = 1; i <= 100; i++){
-        if(i % 4 == 0 && i % 10 == 0){
-            console.log("TenFour")
+    for (i = 1; i <= 100; i++) {
+        if (i % 4 == 0 && i % 10 == 0) {
+            console.log("TenFour");
         }
-        else if(i % 4 === 0){
-            console.log("Four")
+        else if (i % 4 === 0) {
+            console.log("Four");
         }
-        else if(i % 10 === 0){
-            console.log("Ten")
+        else if (i % 10 === 0) {
+            console.log("Ten");
         }
-        else{
-            console.log(i)
+        else {
+            console.log(i);
         }
     }
 }
@@ -110,17 +110,17 @@ function thirdAngle() {
     let angleTwo = parseInt(prompt("Enter the second number"));
     let totalofPromptAngles = angleOne + angleTwo;
     let angleThree = "";
-    if(totalofPromptAngles >= 180){
+    if (totalofPromptAngles >= 180) {
         angleThree = "This exceeds 180 degrees, input invalid";
     }
-    else if(angleOne < 0 && angleTwo < 0){
+    else if (angleOne < 0 && angleTwo < 0) {
         angleThree = "Angles cannot be negative";
     }
-    else{
+    else {
         angleThree = 180 - angleOne - angleTwo;
     }
-    document.getElementById("assignment-buttons-8").innerHTML = angleThree
+    document.getElementById("assignment-buttons-8").innerHTML = angleThree;
 }
-function endoffunction(){
+function function93() {
     alert("Project 9 is in progress");
 }
