@@ -1,6 +1,6 @@
 
-//first function to determine which number is larger with two numbers inputted
 function largerNumber() {
+    //first function to determine which number is larger with two numbers inputted, output will be larger number
     //setting variables for numbers imputted and the final output
     let smallOrLarge1 = parseInt(prompt("Enter first number"));
     let smallOrLarge2 = parseInt(prompt("Enter second number here"));
@@ -23,8 +23,10 @@ function largerNumber() {
     }
     document.getElementById("assignment-buttons-1").innerHTML = largernumber;
 }
-//determines whether the sign of the product of multiplying 3 numbers will be positive or negative
+
 function signOfProduct() {
+    /*determines whether the sign of the product of multiplying 3 numbers will be positive 
+    or negative from input of 3 numbers and outputs sign*/
     //declaring variables for prompts and output
     let productInput1 = parseInt(prompt("Enter the first number"));
     let productInput2 = parseInt(prompt("Enter the second number"));
@@ -48,8 +50,9 @@ function signOfProduct() {
     }
     document.getElementById("assignment-buttons-2").innerHTML = productSign;
 }
-//Sorts 3 inputted numbers numbers from greatest to leaast
+
 function threeNumberSort() {
+    //Sorts 3 inputted numbers numbers from greatest to least
     //declaring variables for input prompts and output
     let numSort1 = parseInt(prompt("Enter the number"));
     let numSort2 = parseInt(prompt("Enter number here"));
@@ -85,17 +88,22 @@ function threeNumberSort() {
     }
     document.getElementById("assignment-buttons-3").innerHTML = numsorted;
 }
-//Determines the sum of all multiples of 3 up until 1000 using for loop
+
 function forSumThrees() {
+    /*Determines the sum of all multiples of 3 up until 1000 using for loop, 
+    outputted in console*/
     let totalsumThrees = 0;
     //for loop that sets what the values start at, end at, and how they increase
     for (let i = 0; i < 1000; i = i + 3) {
+        //variable is updated everytime "i" is added
         totalsumThrees = totalsumThrees + i;
     }
     document.getElementById("assignment-buttons-4").innerHTML = totalsumThrees;
 }
-//Determines the sum of all multiples of 3 up until 1000 using while loop
+
 function whileSumThrees() {
+    /*Determines the sum of all multiples of 3 up until 1000 using while loop, 
+    outputted in console*/
     //Tells function where to start, and only operate while it is under 1000, while increasing by 3's
     let totalSum = 0;
     let i = 0;
@@ -105,38 +113,41 @@ function whileSumThrees() {
     }
     document.getElementById("assignment-buttons-5").innerHTML = totalSum;
 }
-//Determines which numbers are multiples of 4 or/and 10 until 100
+
 function tenFour() {
-    for (i = 1; i <= 100; i++) {
-        //determines which are multiples of both 4 and 10
+    let x = 0;
+    let fourAndTenCountMultiple = 0
+        while (x < 100) {
+        i = i + 1;
         if (i % 4 == 0 && i % 10 == 0) {
-            console.log("TenFour");
+            fourAndTenCountMultiple += ("TenFour");
         }
-        //determines which are multiples of both 4 
-        else if (i % 4 == 0) {
-            console.log("Four");
+        else if (i % 4 === 0) {
+            fourAndTenCountMultiple += ("Four");
         }
-        //determines which are multiples of 10
-        else if (i % 10 == 0) {
-            console.log("Ten");
+    
+        else if (i % 10 === 0) {
+            fourAndTenCountMultiple += ("Ten");
         }
-        //Determines which are multiples of neither
-        else {
-            console.log(i);
+        else 
+            fourAndTenCountMultiple += ( " | "+ i + " | ");
         }
+        document.getElementById("assignment-buttons-6").innerHTML = x
     }
-}
-//Determines the century of the year inputted
+
 function centuryFromYear() {
+    /*Using input of a year, outputs the century in which that year was in*/
     //Declaring prompt and final output
     let yearEntered = prompt("Enter a yearEntered, find out the century it was in");
     let centuryRecorded = 0;
-    //using fomula to calculate and .floor which takes off the decimals
+    /*using fomula to calculate and .floor which takes off the decimals, .ceiling can also be used but if it 
+    is, 1 shouldn't be added*/
     centuryRecorded = Math.floor(yearEntered / 100 + 1);
     document.getElementById("assignment-buttons-7").innerHTML = centuryRecorded;
 }
-//Determines the final angle of a triangle when two are inputted
+
 function thirdAngle() {
+    //Determines the final angle of a triangle when two are inputted and final unknown angle is outputted
     //Declaring variables for the angles inputted and the final output
     let angleOne = parseInt(prompt("Enter the first number"));
     let angleTwo = parseInt(prompt("Enter the second number"));
@@ -156,7 +167,8 @@ function thirdAngle() {
     }
     document.getElementById("assignment-buttons-8").innerHTML = angleThree;
 }
-//reloads page so that buttons and console can be reset easily
+
 function reloadButton() {
+    //reloads page so that buttons and console can be reset easily
     reloadButton = window.location.reload();
 }
