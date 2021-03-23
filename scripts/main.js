@@ -115,25 +115,26 @@ function whileSumThrees() {
 }
 
 function tenFour() {
-    let x = 0;
-    let fourAndTenCountMultiple = 0
-        while (x < 100) {
-        i = i + 1;
+    //logs which numbers are multiples of 4 or/and 10 until 100
+    for (i = 1; i <= 100; i++) {
+        //determines which are multiples of both 4 and 10
         if (i % 4 == 0 && i % 10 == 0) {
-            fourAndTenCountMultiple += ("TenFour");
+            console.log("TenFour");
         }
-        else if (i % 4 === 0) {
-            fourAndTenCountMultiple += ("Four");
+        //determines which are multiples of 10
+        else if (i % 10 == 0) {
+            console.log("Ten");
         }
-    
-        else if (i % 10 === 0) {
-            fourAndTenCountMultiple += ("Ten");
+        //determines which are multiples of both 4 
+        else if (i % 4 == 0) {
+            console.log("Four");
         }
-        else 
-            fourAndTenCountMultiple += ( " | "+ i + " | ");
+        //Determines which are multiples of neither
+        else {
+            console.log(i);
         }
-        document.getElementById("assignment-buttons-6").innerHTML = x
     }
+}
 
 function centuryFromYear() {
     /*Using input of a year, outputs the century in which that year was in*/
