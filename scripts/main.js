@@ -107,7 +107,7 @@ function whileSumThrees() {
 }
 //Determines which numbers are multiples of 4 or/and 10 until 100
 function tenFour() {
-    for (i = 1; i <= 100; i+ 1) {
+    for (i = 1; i <= 100; i++) {
         //determines which are multiples of both 4 and 10
         if (i % 4 == 0 && i % 10 == 0) {
             console.log("TenFour");
