@@ -113,11 +113,11 @@ function tenFour() {
             console.log("TenFour");
         }
         //determines which are multiples of both 4 
-        else if (i % 4 === 0) {
+        else if (i % 4 == 0) {
             console.log("Four");
         }
         //determines which are multiples of 10
-        else if (i % 10 === 0) {
+        else if (i % 10 == 0) {
             console.log("Ten");
         }
         //Determines which are multiples of neither
@@ -156,6 +156,7 @@ function thirdAngle() {
     }
     document.getElementById("assignment-buttons-8").innerHTML = angleThree;
 }
-function function93() {
-    alert("Project 9 is in progress");
+//reloads page so that buttons and console can be reset easily
+function reloadButton() {
+    reloadButton = window.location.reload();
 }
