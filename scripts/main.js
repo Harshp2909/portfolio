@@ -144,6 +144,7 @@ function centuryFromYear() {
     /*using fomula to calculate and .floor which takes off the decimals, .ceiling can also be used but if it 
     is, 1 shouldn't be added*/
     centuryRecorded = Math.floor(yearEntered / 100 + 1);
+    if (centuryRecorded)
     document.getElementById("assignment-buttons-7").innerHTML = centuryRecorded;
 }
 
