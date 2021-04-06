@@ -176,80 +176,51 @@ function Encryption () {
     let encryptedMessage = "";
     let Letter1 = "";
     let Letter2 = "";
-
+    //  inputtedMessage us separated into separate words
     inputtedMessage = inputtedMessage.split(" ");
-
-// I split the inputtedMessage that the user inputted so I can seperate them into elements (words) 
-// For example. The message (I like hot dogs) Will be seperated into I, like, hot, dogs. Into seperate elements.
-
+    
+    //  Loop allows function to go through each word and encrypt it
 	for ( let i = 0; i < inputtedMessage.length; i = i + 1) {
 
-// This loop goes through each word and encrypts it.
-
-	if (inputtedMessage[i].length > 2) {
-
-// This if statement checks if the word has more than two letter. If it does, it will perform the following:
-
-		Letter1 = inputtedMessage[i][0];
-
-// Take the first letter of the word, and save it to variable Letter1 
-
+    // if input is more than four letters, it will perform the following:
+	if (inputtedMessage[i].length > 4) {
+		//Store the first letter of the input in memory
+        Letter1 = inputtedMessage[i][0];
+        //Store the second letter of the input in memory
 		Letter2 = inputtedMessage[i][1];
-
-// Take the second letter of the word, and save it to variable Letter2 
-
+        // Removes the first two letters, saving the remaing letters to encryptedMessage.
 		encryptedMessage += (inputtedMessage[i]).slice(2);
-
-// Takes the word, and removes the first two letters, saving the remaing letters to encryptedMessage.
-// Eg. Noodles would become odles
-
-		encryptedMessage += Letter1 + "oG" + Letter2 + " ";
-
-// Then, we will add to encrypt message, the first letter, the letters oG, and then the second letter.
-// All together it looks like this: Hello = lloHoGe
-
+        /* Will encrpt it as following: The first letter, the letters HAHA, and then the second letter*/
+		encryptedMessage += Letter1 + "HAHA" + Letter2 + " ";
 	}
 
-// These else if statements are pretty similar. If the word is === to a, i, A, or I, it will turn it into a code.
-// Because a and i are the only one letter words in the english language, I wanted to put a special code for each 
-// of them. 
+/*Words like a, i, I, A that can be used as a word are given a special encryption value*/ 
 
 	else if (inputtedMessage[i] === "a") {
-    	encryptedMessage += '0n6kd8f '
+    	encryptedMessage += 'Shabalabadingdong'
     }
     else if (inputtedMessage[i] === "i") {
-    	encryptedMessage += '1n6kd8f '
+    	encryptedMessage += 'Shaden'
     }
 
     else if (inputtedMessage[i] === "A") {
-    	encryptedMessage += '2n6kd8f '
+    	encryptedMessage += 'ArcticFox'
     }
     else if (inputtedMessage[i] === "I") {
-    	encryptedMessage += '3n6kd8f '
+    	encryptedMessage += 'Taataaa'
     }
 
-	else {
-
-// This else function is for the words that are two letters long. It takes the first letter, adds the code "3Xy5r",
-// And then adds the second letter. For examples: my = m3Xy5ry
-
-    encryptedMessage += (inputtedMessage[i][0]) + "3Xy5r" + (inputtedMessage[i][1]) + " ";
-	}
-}
-	alert ("Your message: " + inputtedMessage + " translates to the encrypted message: " + encryptedMessage);
-
-// Alert returns the message you entered, and the ecncrypted form of your message.
+    document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage; 
 
 }
-
-
+}
 function Decryption () {
 	let encryptedMessage = window.prompt("Input the message you would like to be encrypted.");
     let decryptedMessage = "";
     let lastPart = "";
     let getFirstTwoLetters = "";
     encryptedMessage = encryptedMessage.split(" ");
-	
+
 // encryptedMessage that the user inputted is into elements (words) 
 /* The message "Hello my name is Harsh" Will be seperated into
  Hello, my, name, is, Harsh */
@@ -257,10 +228,8 @@ function Decryption () {
     for ( let i = 0; i < encryptedMessage.length; i = i + 1) {
 
 // Loop allows the program to go through each word
-
 	encryptedMessage[i] = encryptedMessage[i].replace(/3Xy5/g, ""); 
 	encryptedMessage[i] = encryptedMessage[i].replace(/oG/g, ""); 
-
 // Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
 // decryption. For example: lloHoGe turns into lloHe (oG was removed per the above code) [Hello = lloHoGe]
 
@@ -322,4 +291,3 @@ function Decryption () {
 // Alert returns the encrypted message you entered, and the decrypted form of your message.
 
 }
-
