@@ -145,7 +145,7 @@ function centuryFromYear() {
     is, 1 shouldn't be added*/
     centuryRecorded = Math.floor(yearEntered / 100 + 1);
     if (centuryRecorded)
-    document.getElementById("assignment-buttons-7").innerHTML = centuryRecorded;
+        document.getElementById("assignment-buttons-7").innerHTML = centuryRecorded;
 }
 
 function thirdAngle() {
@@ -170,124 +170,127 @@ function thirdAngle() {
     document.getElementById("assignment-buttons-8").innerHTML = angleThree;
 }
 
-function Encryption () {
-	//Variables are declared
+function Encryption() {
+    //Variables are declared
     let inputtedMessage = prompt("Input the message you would like to be encrypted.");
     let encryptedMessage = "";
-    let Letter1 = "";
-    let Letter2 = "";
+    let Letter1 = " ";
+    let Letter2 = " ";
     //  inputtedMessage us separated into separate words
     inputtedMessage = inputtedMessage.split(" ");
-    
+
     //  Loop allows function to go through each word and encrypt it
-	for ( let i = 0; i < inputtedMessage.length; i = i + 1) {
+    for (let i = 0; i < inputtedMessage.length; i = i + 1) {
 
-    // if input is more than four letters, it will perform the following:
-	if (inputtedMessage[i].length > 4) {
-		//Store the first letter of the input in memory
-        Letter1 = inputtedMessage[i][0];
-        //Store the second letter of the input in memory
-		Letter2 = inputtedMessage[i][1];
-        // Removes the first two letters, saving the remaing letters to encryptedMessage.
-		encryptedMessage += (inputtedMessage[i]).slice(2);
-        /* Will encrpt it as following: The first letter, the letters HAHA, and then the second letter*/
-		encryptedMessage += Letter1 + "HAHA" + Letter2 + " ";
-	}
+        // if input is more than four letters, it will perform the following:
+        if (inputtedMessage[i].length > 2) {
+            //Store the first letter of the input in memory
+            Letter1 = inputtedMessage[i][0];
+            //Store the second letter of the input in memory
+            Letter2 = inputtedMessage[i][1];
+            // Removes the first two letters, saving the remaing letters to encryptedMessage.
+            encryptedMessage += (inputtedMessage[i]).slice(2);
+            /* Will encrypt it as following: The first letter, the letters HAHA, and then the second letter*/
+            encryptedMessage += Letter1 + "HAHA" + Letter2 + " ";
+        }
+        if (inputtedMessage[i].length >= 4){
+            //Store the third letter of the input in memory
+            Letter1 = inputtedMessage[i][0];
+            //Store the fourth letter of the input in memory
+            Letter2 = inputtedMessage[i][1];
+            //output will be like this:
+            encryptedMessage += Letter2 + "JKKLOLZZZ" + Letter1 + " "
 
-/*Words like a, i, I, A that can be used as a word are given a special encryption value*/ 
-
-	else if (inputtedMessage[i] === "a") {
-    	encryptedMessage += 'Shabalabadingdong'
+        }
+        /*Words like a, i, I, A that can be used as a word are given a special encryption value*/
+        else if (inputtedMessage[i] == "a") {
+            encryptedMessage += 'Shabalabadingdong'
+        }
+        else if (inputtedMessage[i] == "i") {
+            encryptedMessage += 'Shaden'
+        }
+        else if (inputtedMessage[i] == "A") {
+            encryptedMessage += 'ArcticFox'
+        }
+        else if (inputtedMessage[i] == "I") {
+            encryptedMessage += 'Taataaa'
+        }
+        document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage;
     }
-    else if (inputtedMessage[i] === "i") {
-    	encryptedMessage += 'Shaden'
-    }
-
-    else if (inputtedMessage[i] === "A") {
-    	encryptedMessage += 'ArcticFox'
-    }
-    else if (inputtedMessage[i] === "I") {
-    	encryptedMessage += 'Taataaa'
-    }
-
-    document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage; 
-
 }
-}
-function Decryption () {
-	let encryptedMessage = window.prompt("Input the message you would like to be encrypted.");
+function Decryption() {
+    let encryptedMessage = window.prompt("Input the message you would like to be encrypted.");
     let decryptedMessage = "";
     let lastPart = "";
     let getFirstTwoLetters = "";
     encryptedMessage = encryptedMessage.split(" ");
 
-// encryptedMessage that the user inputted is into elements (words) 
-/* The message "Hello my name is Harsh" Will be seperated into
- Hello, my, name, is, Harsh */
+    // encryptedMessage that the user inputted is into elements (words) 
+    /* The message "Hello my name is Harsh" Will be seperated into
+     Hello, my, name, is, Harsh */
 
-    for ( let i = 0; i < encryptedMessage.length; i = i + 1) {
+    for (let i = 0; i < encryptedMessage.length; i = i + 1) {
 
-// Loop allows the program to go through each word
-	encryptedMessage[i] = encryptedMessage[i].replace(/3Xy5/g, ""); 
-	encryptedMessage[i] = encryptedMessage[i].replace(/oG/g, ""); 
-// Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
-// decryption. For example: lloHoGe turns into lloHe (oG was removed per the above code) [Hello = lloHoGe]
+        // Loop allows the program to go through each word
+        encryptedMessage[i] = encryptedMessage[i].replace(/3Xy5/g, "");
+        encryptedMessage[i] = encryptedMessage[i].replace(/oG/g, "");
+        // Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
+        // decryption. For example: lloHoGe turns into lloHe (oG was removed per the above code) [Hello = lloHoGe]
 
-    if (encryptedMessage[i] === "0n6kd8f") {
-    	
-    	decryptedMessage += 'a '
+        if (encryptedMessage[i] === "0n6kd8f") {
+
+            decryptedMessage += 'a '
+        }
+        else if (encryptedMessage[i] === "1n6kd8f") {
+
+            decryptedMessage += 'i '
+        }
+
+        else if (encryptedMessage[i] === "2n6kd8f") {
+
+            decryptedMessage += 'A '
+        }
+        else if (encryptedMessage[i] === "3n6kd8f") {
+
+            decryptedMessage += 'I '
+        }
+        // These else if statements are very similar. They both check for the codes above. Each code above represents a one 
+        // letter word. For example, if the user inputted 1n6kd8f, the else if statement would check for that value and 
+        // if it was a match, it would return the word i. ( 1n6kd8f = i )
+
+        else if (encryptedMessage[i].length > 2) {
+
+            // This else if function is for the words that are longer than two letters. 
+
+            getFirstTwoLetters = encryptedMessage[i].slice(-2);
+
+            // First, I take the last two letters and save them to the variable: getFirstTwoLetters
+
+            lastPart = encryptedMessage[i].slice(0, -2);
+
+            // Then, I slice the encrypted message by removing the last two letters and saving the rest to variable: 
+            // lastPart.
+
+            decryptedMessage += getFirstTwoLetters + lastPart + " ";
+
+            // Then, this adds it all together. 
+            // Eg. lloHe turns into decrypted message += He(getFirstTwoLetters) + llo(lastPart) = Hello
+
+        }
+
+        else if (encryptedMessage[i].length <= 2) {
+
+            // This is for the two letter words. Since at the beginning we remove the 3Xy5r code from each two letter word,
+            // We are just left with the two letter words. Eg. a3Xy5rm is the word at the beginning. When the loop goes through it,
+            // It will remove the 3Xy5r code first so we are left with am. This else if function just adds the word am to the 
+            // decryptedMessage. 
+
+            decryptedMessage += encryptedMessage[i] + " ";
+
+        }
     }
-    else if (encryptedMessage[i] === "1n6kd8f") {
-    	
-    	decryptedMessage += 'i '
-    }
+    alert("Your encrypted message: (" + encryptedMessage + ") means: " + decryptedMessage);
 
-    else if (encryptedMessage[i] === "2n6kd8f") {
-    	
-    	decryptedMessage += 'A '
-    }
-    else if (encryptedMessage[i] === "3n6kd8f") {
-    	
-    	decryptedMessage += 'I '
-    }
-
-// These else if statements are very similar. They both check for the codes above. Each code above represents a one 
-// letter word. For example, if the user inputted 1n6kd8f, the else if statement would check for that value and 
-// if it was a match, it would return the word i. ( 1n6kd8f = i )
-
-    else if (encryptedMessage[i].length > 2) {
-
-    	// This else if function is for the words that are longer than two letters. 
-    	
-    		getFirstTwoLetters = encryptedMessage[i].slice(-2);
-
-    		// First, I take the last two letters and save them to the variable: getFirstTwoLetters
-
-    		lastPart = encryptedMessage[i].slice(0, -2);
-
-    		// Then, I slice the encrypted message by removing the last two letters and saving the rest to variable: 
-    		// lastPart.
-  
-    		decryptedMessage += getFirstTwoLetters + lastPart + " ";
-
-    		// Then, this adds it all together. 
-    		// Eg. lloHe turns into decrypted message += He(getFirstTwoLetters) + llo(lastPart) = Hello
-
-    	} 
-
-    else if (encryptedMessage[i].length <= 2){
-
-    	// This is for the two letter words. Since at the beginning we remove the 3Xy5r code from each two letter word,
-    	// We are just left with the two letter words. Eg. a3Xy5rm is the word at the beginning. When the loop goes through it,
-    	// It will remove the 3Xy5r code first so we are left with am. This else if function just adds the word am to the 
-    	// decryptedMessage. 
-   
-		decryptedMessage += encryptedMessage[i] + " ";
-
-	}
-    }
-    alert ("Your encrypted message: (" + encryptedMessage + ") means: " + decryptedMessage);
-
-// Alert returns the encrypted message you entered, and the decrypted form of your message.
+    // Alert returns the encrypted message you entered, and the decrypted form of your message.
 
 }
