@@ -176,13 +176,13 @@ function Encryption() {
     let encryptedMessage = "";
     let Letter1 = " ";
     let Letter2 = " ";
-    //  inputtedMessage us separated into separate words
+    //  inputtedMessage is separated into separate words
     inputtedMessage = inputtedMessage.split(" ");
 
     //  Loop allows function to go through each word and encrypt it
     for (let i = 0; i < inputtedMessage.length; i = i + 1) {
 
-        // if input is more than four letters, it will perform the following:
+        // if input is more than two letters, it will perform the following:
         if (inputtedMessage[i].length > 2) {
             //Store the first letter of the input in memory
             Letter1 = inputtedMessage[i][0];
@@ -193,7 +193,7 @@ function Encryption() {
             /* Will encrypt it as following: The first letter, the letters HAHA, and then the second letter*/
             encryptedMessage += Letter1 + "HAHA" + Letter2 + " ";
         }
-        if (inputtedMessage[i].length >= 4){
+        if (inputtedMessage[i].length = 2){
             //Store the third letter of the input in memory
             Letter1 = inputtedMessage[i][0];
             //Store the fourth letter of the input in memory
