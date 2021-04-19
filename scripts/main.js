@@ -255,10 +255,11 @@ function Decryption() {
         }
         //when the encyptedMessage is more than two words this condition will be used
         else if (encryptedMessage[i].length > 2) {
-            findFirstLetter = encryptedMessage[i].slice(3,4);
+            findFirstLetter = encryptedMessage[i][encryptedMessage[i].length -12];
+            console.log(findFirstLetter)
             findSecondLetter = encryptedMessage[i].slice(-1)
             console.log(encryptedMessage)
-            endingPart = encryptedMessage[i].slice(0,encryptedMessage.length -2);
+            endingPart = encryptedMessage[i].slice(0,encryptedMessage.length -4);
             console.log(endingPart)
             finalDecrypt += findFirstLetter + findSecondLetter + endingPart;
         }
