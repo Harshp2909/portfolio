@@ -176,31 +176,33 @@ function Encryption() {
     let encryptedMessage = "";
     let Letter1 = " ";
     let Letter2 = " ";
-    //  inputtedMessage is separated into separate words
+    //inputtedMessage is separated into separate words
     inputtedMessage = inputtedMessage.split(" ");
 
-    //  Loop allows function to go through each word and encrypt it
+    //Loop allows function to go through each word and encrypt it
     for (let i = 0; i < inputtedMessage.length; i = i + 1) {
 
         // if input is more than two letters, it will perform the following:
         if (inputtedMessage[i].length > 2) {
             //Store the first letter of the input in memory
             Letter1 = inputtedMessage[i][0];
+            console.log(inputtedMessage[i][0])
             //Store the second letter of the input in memory
             Letter2 = inputtedMessage[i][1];
+            console.log(inputtedMessage[i][1])
             // Removes the first two letters, saving the remaing letters to encryptedMessage.
             encryptedMessage += (inputtedMessage[i]).slice(2);
-            /* Will encrypt it as following: The first letter, the letters HAHA, and then the second letter*/
+            console.log((inputtedMessage[i]).slice(2))
+            /* Will encrypt it as following: The first letter, 94{}44erjsda and then the second letter*/
             encryptedMessage += Letter1 + "94{}44erjsda" + Letter2 + " ";
+            console.log(encryptedMessage)
         }
-        if (inputtedMessage[i].length = 2){
+        else if (inputtedMessage[i].length == 2){
             //Store the third letter of the input in memory
             Letter1 = inputtedMessage[i][0];
-            //Store the fourth letter of the input in memory
-            Letter2 = inputtedMessage[i][1];
             //output will be like this:
             encryptedMessage += (inputtedMessage)[i].slice(1)
-            encryptedMessage += Letter2 + "419AP" + Letter1 + " "
+            encryptedMessage += "419AP" + Letter1 + " "
         }
         /*Words like a, i, I, A that can be used as a word are given a special encryption value*/
         else if (inputtedMessage[i] == "a") {
@@ -215,9 +217,6 @@ function Encryption() {
         else if (inputtedMessage[i] == "I") {
             encryptedMessage += 'Taataaa'
         }
-        else{
-            encryptedMessage += (inputtedMessage[i][0]).strike() + "ghghgx-48" (inputtedMessage[i][1]+ " ")
-        }
         document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage;
     }
 }
@@ -226,7 +225,8 @@ function Decryption() {
     let encryptedMessage = prompt("Input the message you would like to be encrypted.");
     let finalDecrypt = "";
     let endingPart = "";
-    let findFirstTwoLetters = "";
+    let findFirstLetter = "";
+    let findSecondLetter = "";
     encryptedMessage = encryptedMessage.split(" ");
     for (let i = 0; i < encryptedMessage.length; i = i + 1) {
 
@@ -236,51 +236,32 @@ function Decryption() {
         /* Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
         decryption.*/
 
-        if (encryptedMessage[i] === "Shabalabadingdong") {
+        if (encryptedMessage[i] == "Shabalabadingdong") {
 
             finalDecrypt += 'a'
         }
-        else if (encryptedMessage[i] === "Shaden") {
+        else if (encryptedMessage[i] == "Shaden") {
 
             finalDecrypt += 'i'
         }
 
-        else if (encryptedMessage[i] === "ArcticFox") {
+        else if (encryptedMessage[i] == "ArcticFox") {
 
             finalDecrypt += 'A'
         }
-        else if (encryptedMessage[i] === "Taataaa") {
+        else if (encryptedMessage[i] == "Taataaa") {
 
             finalDecrypt += 'I'
         }
-
+        //when the encyptedMessage is more than two words this condition will be used
         else if (encryptedMessage[i].length > 2) {
-
-
-
-            findFirstTwoLetters = encryptedMessage[i].slice(-2);
-
-
-
-            endingPart = encryptedMessage[i].slice(0, -2);
-
-            
-
-            finalDecrypt += findFirstTwoLetters + endingPart + " ";
-        }
-        
-        else if (encryptedMessage[i].length <= 2) {
-
-            // This is for the two letter words. Since at the beginning we remove the 3Xy5r code from each two letter word,
-            // We are just left with the two letter words. Eg. a3Xy5rm is the word at the beginning. When the loop goes through it,
-            // It will remove the 3Xy5r code first so we are left with am. This else if function just adds the word am to the 
-            // finalDecrypt. 
-
-            finalDecrypt += encryptedMessage[i] + " ";
-
+            findFirstLetter = encryptedMessage[i].slice(3,4);
+            findSecondLetter = encryptedMessage[i].slice(-1)
+            console.log(encryptedMessage)
+            endingPart = encryptedMessage[i].slice(0,encryptedMessage.length -2);
+            console.log(endingPart)
+            finalDecrypt += findFirstLetter + findSecondLetter + endingPart;
         }
     }
     document.getElementById("assignment-buttons-10").innerHTML = finalDecrypt;
-    // Alert returns the encrypted message you entered, and the decrypted form of your message.
-
 }
