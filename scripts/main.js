@@ -231,8 +231,8 @@ function Decryption() {
     for (let i = 0; i < encryptedMessage.length; i = i + 1) {
 
         // Loop allows the program to go through each word for decryption
-        encryptedMessage[i] = encryptedMessage[i].replace(/94{}44erjsda/g, " ");
-        encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g, " ")
+        encryptedMessage[i] = encryptedMessage[i].replace(/94{}44erjsda/g, "");
+        encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g, "")
         /* Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
         decryption.*/
 
@@ -255,9 +255,9 @@ function Decryption() {
         }
         //when the encyptedMessage is more than two words this condition will be used
         else if (encryptedMessage[i].length > 2) {
-            findFirstLetter = encryptedMessage[i][encryptedMessage[i].length -12];
+            findFirstLetter = encryptedMessage[i][-2]
             console.log(findFirstLetter)
-            findSecondLetter = encryptedMessage[i].slice(-1)
+            findSecondLetter = encryptedMessage[i][-1]
             console.log(encryptedMessage)
             endingPart = encryptedMessage[i].slice(0,encryptedMessage.length -4);
             console.log(endingPart)
