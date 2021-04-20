@@ -231,8 +231,8 @@ function Decryption() {
     for (let i = 0; i < encryptedMessage.length; i = i + 1) {
 
         // Loop allows the program to go through each word for decryption
-        encryptedMessage[i] = encryptedMessage[i].replace(/94{}44erjsda/g, "");
-        encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g, "")
+        encryptedMessage[i] = encryptedMessage[i].replace(/94{}44erjsda/g,"");
+        encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g,"")
         /* Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
         decryption.*/
 
@@ -262,6 +262,12 @@ function Decryption() {
             endingPart = encryptedMessage[i].slice(0,encryptedMessage.length -4);
             console.log(endingPart)
             finalDecrypt += findFirstLetter + findSecondLetter + endingPart;
+        }
+        else if(encryptedMessage[i].length = 2){
+            findFirstLetter = encryptedMessage[i][6];
+            findSecondLetter = encryptedMessage[i][0];
+            encryptedMessage += findFirstLetter + findSecondLetter;
+
         }
     }
     document.getElementById("assignment-buttons-10").innerHTML = finalDecrypt;
