@@ -295,7 +295,14 @@ function Encryption() {
             encryptedMessage += (inputtedMessage[i]).slice(0).slice(1).slice(1);
             //rearanging the word and adding "LOL"
             encryptedMessage += secondLetter += firstLetter + "LOL" + " ";
-        } 
+        }
+        else if (inputtedMessage[i].length == 2){
+            //Store the third letter of the input in memory
+            Letter1 = inputtedMessage[i][0];
+            //output will be like this:
+            encryptedMessage += (inputtedMessage)[i].slice(1)
+            encryptedMessage += "419AP" + Letter1 + " "
+        }
     }
     document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage;
 }
@@ -318,7 +325,7 @@ function Decryption() {
             encryptedMessage[i] = encryptedMessage[i].replace(/%/g, "a").replace(/~/g, "o").replace(/`/g, "l");
             //returning the first letter to the correct location
             firstLetter = encryptedMessage[i].charAt(encryptedMessage[i].length - 1);
-            //returning the second letter to the correct location
+            //returning the first letter to the correct location
             secondLetter = encryptedMessage[i].charAt(encryptedMessage[i].length - 2);
             decrypted += firstLetter + secondLetter + encryptedMessage[i].slice(0, encryptedMessage[i].length - 2) + " ";
         }
