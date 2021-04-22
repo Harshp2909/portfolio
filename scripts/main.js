@@ -318,6 +318,8 @@ function Decryption() {
     encryptedMessage = encryptedMessage.split(" ");
     //Loop allows function to go through each word and decrypt it
     for (let i = 0; i < encryptedMessage.length; i = i + 1) {
+        //replacing for two letter words
+        encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g,"")
         //Decrypt words that are 2 or more characters
         if (encryptedMessage[i].length > 2) {
             encryptedMessage[i] = encryptedMessage[i].slice(0, -3);
@@ -328,6 +330,14 @@ function Decryption() {
             //returning the first letter to the correct location
             secondLetter = encryptedMessage[i].charAt(encryptedMessage[i].length - 2);
             decrypted += firstLetter + secondLetter + encryptedMessage[i].slice(0, encryptedMessage[i].length - 2) + " ";
+        }
+        else if (encryptedMessage[i].length == 7){
+            encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g,"")
+            for(let i = encryptedMessage.length -1; i > -1; i--){
+                decrypted += encryptedMessage[i]
+            }
+
+            
         }
         else{
             decrypted += (" " + encryptedMessage[i] + " ");
