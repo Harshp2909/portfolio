@@ -168,7 +168,7 @@ function thirdAngle() {
         angleThree = 180 - angleOne - angleTwo;
     }
     document.getElementById("assignment-buttons-8").innerHTML = angleThree;
-
+}
 /*
 function Encryption() {
     //Variables are declared
@@ -208,106 +208,123 @@ function Encryption() {
     /*
     
         /*Words like a, i, I, A that can be used as a word are given a special encryption value*/
-        /*
-        else if (inputtedMessage[i] == "a") {
-            encryptedMessage += 'Shabalabadingdong'
-        }
-        else if (inputtedMessage[i] == "i") {
-            encryptedMessage += 'Shaden'
-        }
-        else if (inputtedMessage[i] == "A") {
-            encryptedMessage += 'ArcticFox'
-        }
-        else if (inputtedMessage[i] == "I") {
-            encryptedMessage += 'Taataaa'
-        }
-        document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage;
-    }
+/*
+else if (inputtedMessage[i] == "a") {
+    encryptedMessage += 'Shabalabadingdong'
+}
+else if (inputtedMessage[i] == "i") {
+    encryptedMessage += 'Shaden'
+}
+else if (inputtedMessage[i] == "A") {
+    encryptedMessage += 'ArcticFox'
+}
+else if (inputtedMessage[i] == "I") {
+    encryptedMessage += 'Taataaa'
+}
+document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage;
+}
 }
 function Decryption() {
-    //Declaring variables for function
-    let encryptedMessage = prompt("Input the message you would like to be encrypted.");
-    let finalDecrypt = "";
-    let endingPart = "";
-    let findFirstLetter = "";
-    let findSecondLetter = "";
-    encryptedMessage = encryptedMessage.split(" ");
-    for (let i = 0; i < encryptedMessage.length; i = i + 1) {
+//Declaring variables for function
+let encryptedMessage = prompt("Input the message you would like to be encrypted.");
+let finalDecrypt = "";
+let endingPart = "";
+let findFirstLetter = "";
+let findSecondLetter = "";
+encryptedMessage = encryptedMessage.split(" ");
+for (let i = 0; i < encryptedMessage.length; i = i + 1) {
 
-        // Loop allows the program to go through each word for decryption
-        encryptedMessage[i] = encryptedMessage[i].replace(/94{}44erjsda/g,"");
-        encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g,"")
-        /* Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
-        decryption.
+// Loop allows the program to go through each word for decryption
+encryptedMessage[i] = encryptedMessage[i].replace(/94{}44erjsda/g,"");
+encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g,"")
+/* Everytime the loop goes through an iteration, it first removes the codewords from the elements to help with the
+decryption.
 
-        if (encryptedMessage[i] == "Shabalabadingdong") {
+if (encryptedMessage[i] == "Shabalabadingdong") {
 
-            finalDecrypt += 'a'
-        }
-        else if (encryptedMessage[i] == "Shaden") {
+    finalDecrypt += 'a'
+}
+else if (encryptedMessage[i] == "Shaden") {
 
-            finalDecrypt += 'i'
-        }
+    finalDecrypt += 'i'
+}
 
-        else if (encryptedMessage[i] == "ArcticFox") {
+else if (encryptedMessage[i] == "ArcticFox") {
 
-            finalDecrypt += 'A'
-        }
-        else if (encryptedMessage[i] == "Taataaa") {
+    finalDecrypt += 'A'
+}
+else if (encryptedMessage[i] == "Taataaa") {
 
-            finalDecrypt += 'I'
-        }
-        //when the encyptedMessage is more than two words this condition will be used
-        else if (encryptedMessage[i].length > 2) {
-            findFirstLetter = encryptedMessage[i][-2]
-            console.log(findFirstLetter)
-            findSecondLetter = encryptedMessage[i][-1]
-            console.log(encryptedMessage)
-            endingPart = encryptedMessage[i].slice(0,encryptedMessage.length -4);
-            console.log(endingPart)
-            finalDecrypt += findFirstLetter + findSecondLetter + endingPart;
-        }
-    }
-    document.getElementById("assignment-buttons-10").innerHTML = finalDecrypt;
+    finalDecrypt += 'I'
+}
+//when the encyptedMessage is more than two words this condition will be used
+else if (encryptedMessage[i].length > 2) {
+    findFirstLetter = encryptedMessage[i][-2]
+    console.log(findFirstLetter)
+    findSecondLetter = encryptedMessage[i][-1]
+    console.log(encryptedMessage)
+    endingPart = encryptedMessage[i].slice(0,encryptedMessage.length -4);
+    console.log(endingPart)
+    finalDecrypt += findFirstLetter + findSecondLetter + endingPart;
+}
+}
+document.getElementById("assignment-buttons-10").innerHTML = finalDecrypt;
 }
 */
-function Encryption(){
-	// Uses a prompt from the user and returns an encrypted version
-	let inputtedMessage = prompt("Enter a message to be encrypted");
-	let encryptedMessage = "";
-	let firstLetter = "";
-	let secondLetter = "";
+function Encryption() {
+    let inputtedMessage = prompt("Enter a message to be encrypted");
+    let encryptedMessage = "";
+    let firstLetter = "";
+    let secondLetter = "";
+    //splitting input into individual words
     inputtedMessage = inputtedMessage.split(" ");
-		for (let i = 0; i < inputtedMessage.length; i = i + 1){
-			if (inputtedMessage[i].length > 2){
-				inputtedMessage[i] = inputtedMessage[i].replace(/a/g, "%").replace(/o/g, "~").replace(/l/g, "`"); // Replaces the letter a to s, the letter o to and l to k
-				firstLetter = inputtedMessage[i][0];
-				secondLetter = inputtedMessage[i][1]; // Saves the second letter of a word
-				encryptedMessage += (inputtedMessage[i]).slice(0).slice(1).slice(1);
-				encryptedMessage += secondLetter += firstLetter + "sin" + " ";
-			} else {
-				encryptedMessage += (" " + inputtedMessage[i] + " "); // If length is 2 or less, the message is unaltered
-			}
-		}
-	document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage;
+    //Loop allows function to go through each word and encrypt it
+    for (let i = 0; i < inputtedMessage.length; i = i + 1) {
+        //if word length is greater than two this will occur:
+        if (inputtedMessage[i].length > 2) {
+            //a will be replaced with %
+            inputtedMessage[i] = inputtedMessage[i].replace(/a/g, "%")
+            //o will be relaced with ~
+            inputtedMessage[i] = inputtedMessage[i].replace(/o/g, "~");
+            //l will be replaced by `
+            inputtedMessage[i] = inputtedMessage[i].replace(/l/g, "`");
+            //saving the first letter of the word to memory
+            firstLetter = inputtedMessage[i][0];
+            //saving the second letter of the word to memory
+            secondLetter = inputtedMessage[i][1];
+            encryptedMessage += (inputtedMessage[i]).slice(0).slice(1).slice(1);
+            //rearanging the word and adding "LOL"
+            encryptedMessage += secondLetter += firstLetter + "LOL" + " ";
+        } 
+    }
+    document.getElementById("assignment-buttons-9").innerHTML = encryptedMessage;
 }
 
-function Decryption(){
-	let encryptedMessage = document.getElementById("encrypted").innerHTML
-	let decrypted = ""; 
-	let firstLetter = "";
-	let secondLetter = "";
-	encryptedMessage = encryptedMessage.split(" ");
-	for (let i = 0; i < encryptedMessage.length; i = i + 1){
-		if (encryptedMessage[i].length > 2){
-			encryptedMessage[i] = encryptedMessage[i].slice(0, -3);
-			encryptedMessage[i] = encryptedMessage[i].replace(/%/g, "a").replace(/~/g, "o").replace(/`/g, "l");
-			firstLetter = encryptedMessage[i].charAt(encryptedMessage[i].length -1);
-			secondLetter = encryptedMessage[i].charAt(encryptedMessage[i].length -2);
-			decrypted += firstLetter + secondLetter + encryptedMessage[i].replace(/%/g, "a").replace(/~/g, "o").replace(/`/g, "l").slice(0, ciphertext[x].length -2) + " ";
-		} 
-        else {
-			decrypted += (" " + encryptedMessage[x] + " ");
-		}
-        document.getElementById("ssignment-buttons-10").innerHTML = decrypted
+function Decryption() {
+    //Variables declared
+    //taking the output of the previous function in the following declaration
+    let encryptedMessage = document.getElementById("assignment-buttons-9").innerHTML
+    let decrypted = "";
+    let firstLetter = "";
+    let secondLetter = "";
+    //splitting input into individual words
+    encryptedMessage = encryptedMessage.split(" ");
+    //Loop allows function to go through each word and decrypt it
+    for (let i = 0; i < encryptedMessage.length; i = i + 1) {
+        //Decrypt words that are 2 or more characters
+        if (encryptedMessage[i].length > 2) {
+            encryptedMessage[i] = encryptedMessage[i].slice(0, -3);
+            //replacing % with a, ~ with o and ` with g
+            encryptedMessage[i] = encryptedMessage[i].replace(/%/g, "a").replace(/~/g, "o").replace(/`/g, "l");
+            //returning the first letter to the correct location
+            firstLetter = encryptedMessage[i].charAt(encryptedMessage[i].length - 1);
+            //returning the second letter to the correct location
+            secondLetter = encryptedMessage[i].charAt(encryptedMessage[i].length - 2);
+            decrypted += firstLetter + secondLetter + encryptedMessage[i].slice(0, encryptedMessage[i].length - 2) + " ";
+        }
+        else{
+            decrypted += (" " + encryptedMessage[i] + " ");
+        }
+    }
+    document.getElementById("assignment-buttons-10").innerHTML = decrypted;
 }	
