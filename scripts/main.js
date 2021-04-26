@@ -171,6 +171,7 @@ function thirdAngle() {
 }
 
 function Encryption() {
+    //Declaring varriables
     let inputtedMessage = prompt("Enter a message to be encrypted");
     let encryptedMessage = "";
     let firstLetter = "";
@@ -220,8 +221,7 @@ function Decryption() {
         //replacing for two letter words
         encryptedMessage[i] = encryptedMessage[i].replace(/419AP/g, "");
         //Decrypt words that are 2 or more characters
-        if (encryptedMessage[i].length > 3) {
-            console.log("if " + encryptedMessage[i])
+        if (encryptedMessage[i].length > 3){
             encryptedMessage[i] = encryptedMessage[i].slice(0, -3);
             //replacing % with a, ~ with o and ` with g
             encryptedMessage[i] = encryptedMessage[i].replace(/%/g, "a").replace(/~/g, "o").replace(/`/g, "l");
@@ -230,11 +230,11 @@ function Decryption() {
             //returning the first letter to the correct location
             secondLetter = encryptedMessage[i].charAt(encryptedMessage[i].length - 2);
             decrypted += firstLetter + secondLetter + encryptedMessage[i].slice(0, encryptedMessage[i].length - 2) + " ";
-            //console.log("if " + decrypted)
+
         }
         else if (encryptedMessage[i].length == 3) {
             decrypted += encryptedMessage[i][1] + encryptedMessage[i][0];
-            console.log(decrypted)
+
         }
         else {
             decrypted += encryptedMessage[i];
