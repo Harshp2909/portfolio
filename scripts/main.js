@@ -1,4 +1,3 @@
-
 function largerNumber() {
     //first function to determine which number is larger with two numbers inputted, output will be larger number
     //setting variables for numbers imputted and the final output
@@ -181,7 +180,7 @@ function Encryption() {
     //Loop allows function to go through each word and encrypt it
     for (let i = 0; i < inputtedMessage.length; i = i + 1) {
         //if word length is greater than two this will occur:
-        if (inputtedMessage[i].length > 2) {
+        if (inputtedMessage[i].length > 2){
             //saving the first letter of the word to memory
             firstLetter = inputtedMessage[i][0];
             //saving the second letter of the word to memory
