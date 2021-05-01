@@ -168,7 +168,28 @@ function thirdAngle() {
     }
     document.getElementById("assignment-buttons-8").innerHTML = angleThree;
 }
- 
+ // Random 3 Numbers
+  
+  // Variables declared in global scope to be used in both encryption and decryption
+  let random1 = '';
+  let random2 = '';
+  let random3 = '';
+
+const random = () => {
+  /*
+  Generates 3 random integers that are later used in encryption and decryption
+  */
+  const numbers = Array(9).fill().map((_, index) => index + 1); // Inspired by Felix Lemke on StackOverflow
+  numbers.sort(() => Math.random() - 0.5);
+  
+  //Extracts the first three digits of the numbers array
+  random1 = numbers.slice(0, 1);  
+  random2 = numbers.slice(1, 2);
+  random3 = numbers.slice(2, 3);
+}
+
+// Text Encryption Function
+  
   // Variables declared in global scope to be used in both encryption and decryption
   let cipherText2 = '';
   let beginning = '';
@@ -280,9 +301,7 @@ const encrypt = () => {
     document.getElementById("assignment-buttons-9").innerHTML = cipherText; //Outputs the encrypted message to 'answer-box'
 
   }
-  
 }
-
 // Text Decryption Function
 function decrypt() {
   /* 
@@ -348,7 +367,7 @@ function decrypt() {
 
   if (disorder.length == 1){ //If only 1 characer was initially input
 
-    document.getElementById("answer-box").innerHTML = disorder
+    document.getElementById("assignment-buttons-10").innerHTML = disorder
 
   } else { //If multiple characters were initially input
 
@@ -360,8 +379,7 @@ function decrypt() {
         plainText += reverseText[i]
       }
       
-      document.getElementById("answer-box").innerHTML = plainText; //Outputs the decrypted message to 'answer-box'
-
+      document.getElementById("assignment-buttons-10").innerHTML = plainText; //Outputs the decrypted message to 'answer-box'
   } 
   
 }
