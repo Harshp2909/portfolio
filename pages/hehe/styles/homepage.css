@@ -1,0 +1,40 @@
+#introduction-header{
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+#introduction-header{
+    position: absolute;
+    margin-top: 10vh;
+    left: 37.5vw;
+    font-size: 3.96vh;
+    color: #ddedf4;
+    background-color: #212221;
+    padding: 0.9975vw;
+    width: 22vw;
+    font-family: 'Kiwi Maru', serif;
+
+}
+#intro-img{
+    z-index: -1;
+}
+div{
+    color: white;
+}
+#intro-text{
+    position: absolute;
+    top: 30vw;
+    margin-bottom: 50%;
+    left: 37.5vw;
+    font-size: 2.7
+    6vh;
+    color: #ddedf4;
+    background-color: #212221;
+    padding: 0.9975vw;
+    width: 22vw;
+    font-family: 'Kiwi Maru', serif;
+
+}
+.nav{
+    align-content: center;
+}
